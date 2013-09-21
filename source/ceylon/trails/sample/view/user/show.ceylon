@@ -5,13 +5,13 @@ import ceylon.html.layout {
     BaseLayout
 }
 import ceylon.trails.core {
-    View
+    HtmlView
 }
 import ceylon.trails.sample.model {
     User
 }
 
-shared class ShowView(User user) satisfies View {
+shared class ShowView(User user) satisfies HtmlView {
 
     render() => BaseLayout {
         

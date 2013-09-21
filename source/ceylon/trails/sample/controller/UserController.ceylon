@@ -3,7 +3,7 @@ import ceylon.net.http.server {
     Response
 }
 import ceylon.trails.core {
-    View
+    HtmlView
 }
 import ceylon.trails.sample.model {
     User
@@ -14,8 +14,7 @@ import ceylon.trails.sample.view.user {
 
 shared class UserController() {
     
-    shared View show(Request req, Response res) {
-    //shared View show() {
+    shared HtmlView show(Request req, Response res) {
         return ShowView(User {
             id = 1;
             name = "Daniel Rochetti";

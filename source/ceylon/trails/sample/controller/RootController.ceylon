@@ -3,7 +3,7 @@ import ceylon.net.http.server {
     Response
 }
 import ceylon.trails.core {
-    View
+    HtmlView
 }
 import ceylon.trails.routing {
     route
@@ -15,8 +15,7 @@ import ceylon.trails.sample.view {
 
 route("/")
 shared class RootController() {
-    
-    shared View index(Request req, Response res) => IndexView();
-    //shared View index() => IndexView();
+
+    shared HtmlView index(Request req, Response res) => IndexView();
 
 }

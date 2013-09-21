@@ -5,10 +5,10 @@ import ceylon.html.layout {
     BaseLayout
 }
 import ceylon.trails.core {
-    View
+    HtmlView
 }
 
-shared class IndexView() satisfies View {
+shared class IndexView() satisfies HtmlView {
 
     render() => BaseLayout {
         title = "index | sample | ceylon-trails";
